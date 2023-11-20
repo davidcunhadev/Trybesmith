@@ -1,8 +1,7 @@
 import { Request, Response } from 'express';
 import productsService from '../services/products.service';
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-const create = async (req: Request, res: Response) => {
+const create = async (req: Request, res: Response) : Promise<unknown> => {
   const { name, price, orderId } = req.body;
   const serviceResponse = await productsService.create({ name, price, orderId });
 
