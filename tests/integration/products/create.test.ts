@@ -4,7 +4,7 @@ import chaiHttp from 'chai-http';
 import Sinon from 'sinon';
 import app from '../../../src/app'
 import ProductModel from '../../../src/database/models/product.model';
-import { product, validBody } from '../../mocks/Product';
+import { product, validBody } from '../../mocks/Product.mock';
 
 chai.use(chaiHttp);
 
