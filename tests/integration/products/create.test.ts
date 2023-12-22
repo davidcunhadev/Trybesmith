@@ -19,4 +19,30 @@ describe('POST /products', function () {
 
     expect(response.status).to.be.equal(201);
   })
+
+  it ('Testa se lança erro ao enviar body sem o campo price', async function () {
+    const productSimulated = ProductModel.build(product)
+    Sinon.stub(ProductModel, 'create').resolves(productSimulated)
+
+    const response = await chai.request(app).post('/products').send({
+      "name": "Martelo de Thor",
+      "orderId": 5
+    })
+
+    expect(response.status).to.be.deep.equal(400);
+    expect(response.body).to.have.key('message')
+  })
+
+  it ('Testa se lança erro ao enviar body sem o campo name', async function () {
+    const productSimulated = ProductModel.build(product)
+    Sinon.stub(ProductModel, 'create').resolves(productSimulated)
+
+    const response = await chai.request(app).post('/products').send({
+      "price": "30 peças de ouro",
+      "orderId": 5
+    })
+
+    expect(response.status).to.be.deep.equal(400);
+    expect(response.body).to.have.key('message')
+  })
 });

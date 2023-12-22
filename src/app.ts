@@ -10,4 +10,8 @@ app.use(productsRouter);
 app.use(ordersRouter);
 app.use(loginRouter);
 
+app.get('/', (_request, response) => {
+  response.send('Servidor Online!');
+});
+
 export default app;
