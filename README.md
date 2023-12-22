@@ -125,6 +125,8 @@ npm run db:reset
       }
     ]
 
+<br>
+
 <li><h3>POST <code>/products</code></h3></li>
 <p>Esta rota possibilita o cadastro de um novo produto no banco de dados.</p>
 
@@ -153,7 +155,9 @@ npm run db:reset
       "price": "30 peças de ouro",
       "orderId": 3
     }
-    
+
+<br>
+
 <li><h3>GET <code>/orders</code></h3></li>
 <p>Esta rota retorna a lista de todas as ordens de pedidos cadastrados no banco de dados.</p>
 
@@ -195,6 +199,8 @@ npm run db:reset
         ]
       }
     ]
+
+<br>
 
 <li><h3>POST <code>/login</code></h3></li>
 
