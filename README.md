@@ -208,7 +208,7 @@ npm run db:reset
 
 <h4>Parâmetros</h4>
 <ul>
-  <li> "username": Nome do usuário</li>
+  <li> "username": Nome do usuário.</li>
   <li> "password": Senha do usuário.</li>
 </ul>
 
