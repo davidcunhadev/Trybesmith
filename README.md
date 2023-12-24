@@ -63,12 +63,18 @@ npm install
 docker-compose up -d --build
 ```
 
-5. Para criar e popular o banco de dados rode o comando:
+5. Em seu VSCode, utilizando a extensão <strong>Database Client</strong>, faça uma nova conexão <strong>MYSQL</strong>, apenas utilizando a palavra <strong>password</strong> como senha para conectar:
+   
+```
+password
+```
+
+6. Para criar e popular o banco de dados rode o comando:
 ```
 npm run db:reset
 ```
 
-6. Com isso a aplicação já estará no ar no <a href="http://localhost:3001/" target="_blank"> localhost:3001 </a>.
+7. Com isso a aplicação já estará no ar no <a href="http://localhost:3001/" target="_blank"> localhost:3001 </a>.
 
 <br>
 
